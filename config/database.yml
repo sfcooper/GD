@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: GD_production
-  username: GD
-  password: <%= ENV['GD_DATABASE_PASSWORD'] %>
+  URL: postgres://zjalcflctcpqxf:8d43701f9288367dfedbdc7358747e8c72e243b1f1e58863c325bba4ff3d6ca2@ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/db7gk5e059vbj7
