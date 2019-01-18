@@ -1,0 +1,42 @@
+<%= form_with(model: gin, local: true) do |form| %>
+  <% if gin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gin.errors.count, "error") %> prohibited this gin from being saved:</h2>
+
+      <ul>
+      <% gin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :snippet %>
+    <%= form.text_field :snippet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distillary_id %>
+    <%= form.number_field :distillary_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

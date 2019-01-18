@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gin_id: 1
+  botanical_id: 1
+
+two:
+  gin_id: 1
+  botanical_id: 1

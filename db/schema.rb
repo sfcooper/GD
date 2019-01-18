@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_18_183658) do
+ActiveRecord::Schema.define(version: 2019_01_18_202938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,31 @@ ActiveRecord::Schema.define(version: 2019_01_18_183658) do
     t.text "body"
     t.string "slug"
     t.integer "tags"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "botanicals", force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "gin_botanicals", force: :cascade do |t|
+    t.integer "gin_id"
+    t.integer "botanical_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "gins", force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.text "description"
+    t.string "snippet"
+    t.integer "distillary_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
