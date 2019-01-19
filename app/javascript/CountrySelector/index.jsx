@@ -12,9 +12,10 @@ class CountrySelector extends React.Component {
     render() {
         return (
             <div className="form-group">
-            <label htmlFor="distillery_country">Country</label>
+            <label className="input-label" htmlFor="distillery_country">Country</label>
               <Select isClearable id="country" name="distillery[country]" options={countryOptions} />
             </div>
+            
             
 
         );

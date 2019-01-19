@@ -13,23 +13,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :name, class: "input-label" %>
+    <%= form.text_field :name, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :slug %>
-    <%= form.text_field :slug %>
+    <%= form.label :snippet, class: "input-label" %>
+    <%= form.text_area :snippet, class: "input"  %>
   </div>
 
   <div class="field">
-    <%= form.label :snippet %>
-    <%= form.text_area :snippet %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :description, class: "input-label" %>
+    <%= form.text_area :description, class: "input"  %>
   </div>
 
   <div id="country-selector"></div>

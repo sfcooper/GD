@@ -269,6 +269,65 @@ p {
   }
 }
 
+/* FORMS */
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2BA3C8;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+}
+
+.input-label {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+
+/* CARDS */
+
+.card {
+  padding: 20px;
+  background-color: #fff; 
+  color: white;
+  margin-bottom: 15px;
+}
+
 /* header */
 
 .header {
@@ -411,6 +470,10 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.button:hover, a:hover {
+  opacity: 0.9;
 }
 
 /* PILL */
