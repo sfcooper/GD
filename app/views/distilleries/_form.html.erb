@@ -1,0 +1,40 @@
+<%= javascript_pack_tag 'countryselector' %>
+<%= form_with(model: distillery, local: true) do |form| %>
+  <% if distillery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(distillery.errors.count, "error") %> prohibited this distillery from being saved:</h2>
+
+      <ul>
+      <% distillery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug %>
+  </div>
+
+  <div class="field">
+    <%= form.label :snippet %>
+    <%= form.text_area :snippet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div id="country-selector"></div>
+
+  <div class="actions">
+    <%= form.submit class: "button" %>
+  </div>
+<% end %>

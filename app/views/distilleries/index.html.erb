@@ -1,0 +1,22 @@
+<div class="container"><p id="notice"><%= notice %></p>
+
+<h1>Distilleries</h1>
+
+<p>This is where the magic happens.  Without a distillery there would be no gin.</p>
+
+    <% @distilleries.each do |distillery| %>
+      <%= distillery.name %>
+      <%= distillery.slug %>
+      <%= distillery.snippet %>
+      <%= distillery.description %>
+      <%= distillery.country %>
+      <%= link_to 'Show', distillery %>
+      <%= link_to 'Edit', edit_distillery_path(distillery) %>
+      <%= link_to 'Destroy', distillery, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+
+
+<br>
+
+<%= link_to 'New Distillery', new_distillery_path %>
+</div>

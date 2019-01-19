@@ -1,12 +1,10 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
-<p>
-  <strong>Name:</strong>
+<H1>
   <%= @gin.name %>
-</p>
+</H1>
 
-<p>
-  <strong>Snippet:</strong>
+<p class="lead">
   <%= @gin.snippet %>
 </p>
 
@@ -18,7 +16,7 @@
 
 <h3>Botanicals</h3>
 <% @gin.botanicals.each do |bots| %>
-  <%= bots.name %>
+  <span class="pill"><%= bots.name %></span>
 <%end%>
 <br />
 <br />
