@@ -55,7 +55,7 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test: &test
   <<: *default
   database: GD_test
 
@@ -81,3 +81,6 @@ test:
 production:
   <<: *default
   URL: postgres://zjalcflctcpqxf:8d43701f9288367dfedbdc7358747e8c72e243b1f1e58863c325bba4ff3d6ca2@ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/db7gk5e059vbj7
+
+cucumber:
+  <<: *test
