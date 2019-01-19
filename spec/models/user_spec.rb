@@ -5,7 +5,5 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:fname) }
     it { should validate_presence_of(:email) }
   end
-  context 'associations' do
-    it { should have_many(:gins) }
-  end
+
 end
