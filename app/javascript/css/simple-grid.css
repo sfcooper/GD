@@ -11,8 +11,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  padding-top: 30px;
   left: 0;
   top: 0;
   font-size: 100%;
@@ -256,6 +255,7 @@ p {
   background-color: aliceblue;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
+  top: 0%;
   width: 100%;
   z-index: 3;
 }

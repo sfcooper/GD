@@ -4,11 +4,13 @@
   "dependencies": {
     "@rails/webpacker": "3.5",
     "autoprefixer": "^9.4.5",
+    "axios": "^0.18.0",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-responsive-navbar": "^1.0.11"
+    "react-responsive-navbar": "^1.0.11",
+    "react-select": "^2.3.0"
   },
   "devDependencies": {
     "tailwindcss": "^0.7.3",

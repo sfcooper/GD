@@ -1,18 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<div class="container">
 <p>
   <strong>Name:</strong>
   <%= @gin.name %>
-</p>
-
-<p>
-  <strong>Slug:</strong>
-  <%= @gin.slug %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @gin.description %>
 </p>
 
 <p>
@@ -20,10 +10,22 @@
   <%= @gin.snippet %>
 </p>
 
+
 <p>
-  <strong>Distillary:</strong>
-  <%= @gin.distillary_id %>
+  <strong>Description:</strong>
+  <%= @gin.description %>
 </p>
+
+<h3>Botanicals</h3>
+<% @gin.botanicals.each do |bots| %>
+  <%= bots.name %>
+<%end%>
+<br />
+<br />
+
+
 
 <%= link_to 'Edit', edit_gin_path(@gin) %> |
 <%= link_to 'Back', gins_path %>
+
+</div>
