@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="container">
 <h1>Gins</h1>
 
 <table>
@@ -21,7 +21,7 @@
         <td><%= gin.slug %></td>
         <td><%= gin.description %></td>
         <td><%= gin.snippet %></td>
-        <td><%= gin.distillary_id %></td>
+        <td><%= gin.distillery_id %></td>
         <td><%= link_to 'Show', gin %></td>
         <td><%= link_to 'Edit', edit_gin_path(gin) %></td>
         <td><%= link_to 'Destroy', gin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -33,3 +33,4 @@
 <br>
 
 <%= link_to 'New Gin', new_gin_path %>
+</div><!-- end of main container -->
