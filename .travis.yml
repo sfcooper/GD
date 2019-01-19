@@ -15,9 +15,8 @@ deploy:
   api_key:
     secure: NUdZOHBjPZOQLqrVFSAlV4tQQ3wtx940sLNfowiAYnf4IwjX/+0i9GsH98LWbRr5pZHR1whjxsakeYNnbopCMKu5FGAC7uaKYmz79BOVOx6Bgss70tZ3sOT9IidBwiptoqloe49kISOrN+cocWKkh5v3eoqQ725I2S/zydhMWohSPSwvs3A4eMhA8hUCkl5oau9Koje0MhgHBfIj3EDHidUhxb83XhXUKRynGiNWMcK6o6JFxTkso1QAF7p+wBypvphKlKMe9k5QTTEtPUPAPf2FT0JUVfVcvUxOQBvFR1wOe1lYVNnJ/LjSAI1Nz3iHiyC19XM5s7x2UHh2aR/Xvz8vlOy7t6ixk7bu4QVUOjTxuhmUzvpCH0PfmNTDuZfn6IDiQnBA8hV1HGf48dgV0V0BAr+Evzdd9R8Kv+45FGQG//eTBALNDoWbCEnOjdEg6NGsflCz0Fk89vgdlhhn5QkICnxaWQaT7OctCZZn87gTiLfaMN5X0BQDRiSFr454bfO1d46enwIQYjK23i91wu7DmHyrC88c33LzamDg4i3ZbMnCwUzz2nCkE2MSvn8hzU80Z51SGTnW4vY5n6IrGzhSg7amnEjuJGntZpUkO2IjjdnZWkewDuILgEjlW7NmNo7C/KXV7xvdYwDGrY/MfNmcl0xFaMAvRa4oIoNu2g0=
   app:
-    develop: YOUR_DEVELOPMENT_APP
-    master: YOUR_PRODUCTION_APP
+    master: thegd
   on:
-    repo: YOUR_GITHUB_REPO
+    repo: sfcooper/GD
   run:
   - rails db:migrate
