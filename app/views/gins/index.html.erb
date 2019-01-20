@@ -3,14 +3,23 @@
 <h1>Gins</h1>
 <h2>All Gins</h2>
 
+    <%= form_tag gins_path, method: :get do %>
+     <div class="input-group mb-5">
+      <%= text_field_tag :q, nil, placeholder: "Name, Flavour...", class: "form-control rounded-pill mr-3" %>
+      <span class="input-group-btn">
+         <button class="btn btn-primary" type="submit">Search</button> 
+      </span>
+      <%= link_to "Clear", gins_path, class: "btn btn-default" %>
+      </div>
+    <% end %>
+
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th>Slug</th>
       <th>Description</th>
       <th>Snippet</th>
-      <th>Distillary</th>
+      <th>Distillery</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +28,6 @@
     <% @gins.each do |gin| %>
       <tr>
         <td><%= gin.name %></td>
-        <td><%= gin.slug %></td>
         <td><%= gin.description %></td>
         <td><%= gin.snippet %></td>
         <td><%= link_to 'Show', gin %></td>

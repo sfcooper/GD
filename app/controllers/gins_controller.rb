@@ -4,7 +4,11 @@ class GinsController < ApplicationController
   # GET /gins
   # GET /gins.json
   def index
-    @gins = Gin.all
+    query = params[:q].presence || "*"
+    conditions = {}
+    conditions[:country] = params[:country] if params[:country].present?
+    @gins = Gin.search(query, order: {name: :asc}, misspellings: {edit_distance: 2}, where: conditions, aggs: {country: {} })
+
   end
 
   # GET /gins/1
