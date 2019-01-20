@@ -7,6 +7,5 @@ class User < ApplicationRecord
 
   has_many :gins
 
-  validates :fname, presence: true
-  validates :email, presense: true
+
 end
