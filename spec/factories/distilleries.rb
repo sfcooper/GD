@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :distillery do
 
   end

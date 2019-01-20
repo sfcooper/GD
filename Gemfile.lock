@@ -134,10 +134,10 @@ GEM
       multi_json
     erubi (1.8.0)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
@@ -352,7 +352,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   devise
-  factory_girl_rails
+  factory_bot_rails
   friendly_id (~> 5.2.0)
   image_processing (~> 1.2)
   jbuilder (~> 2.5)
