@@ -12,10 +12,12 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 30px;
+  margin-bottom: 50px;
   left: 0;
   top: 0;
   font-size: 100%;
   background-color: aliceblue;
+  margin: 0;
 }
 
 /* ROOT FONT STYLES */
@@ -54,7 +56,13 @@ h2 {
   background-clip: text;
   color: #1B2D61;
   text-shadow: rgba(255,255,255,0.5) 0px 5px 5px;
+  text-decoration: none;
 }
+
+h2 a {
+  text-decoration: none;
+}
+
 
 h3 {
   font-size: 1.375rem;
@@ -296,9 +304,10 @@ p {
 /* The alert message box */
 .notice {
   padding: 20px;
-  background-color: lightgreen;
-  border: 1px solid darkgreen; 
+  background-color: rgb(181, 241, 181);
+  border: 2px solid darkgreen; 
   color: darkgreen;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -461,6 +470,23 @@ p {
   }
 }
 
+/* FOOTER */
+
+.footer {
+  position: relative;
+  background-color: #1B2D61;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding:20px;
+}
+
+.footer p {
+  color: #82D6D6;
+}
+
+
+
 
 /* IMAGES */
 
@@ -488,7 +514,7 @@ img {
 }
 
 .button:hover, a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* PILL */

@@ -6,7 +6,7 @@
   </H1>
 
   <p>by</p>
-  <h2><%= @gin.distillery.name %></h2>
+  <h2><%= link_to @gin.distillery.name, distillery_path(@gin.distillery) %> </h2>
   </div>
 <%= image_tag @gin.image.variant(resize: "400x400"), class: "img" %>
 
