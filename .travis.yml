@@ -1,13 +1,13 @@
 language: ruby
 rvm:
-- 2.4.0
+  - 2.4.0
 before_script:
-- bundle exec rake db:create --all
-- bundle exec rake db:migrate
+  - bundle exec rake db:create --all
+  - bundle exec rake db:migrate
 script:
   - bundle exec rake ci:tests
 services:
-- postgresql
+  - postgresql
 notifications:
   email: false
 deploy:
@@ -19,4 +19,4 @@ deploy:
   on:
     repo: sfcooper/GD
   run:
-  - rails db:migrate
+    - "rails db:migrate"
