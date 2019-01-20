@@ -5,9 +5,9 @@
 
     <%= form_tag gins_path, method: :get do %>
      <div class="input-group mb-5">
-      <%= text_field_tag :q, nil, placeholder: "Name, Flavour...", class: "form-control rounded-pill mr-3" %>
+      <%= text_field_tag :q, nil, placeholder: "Name, Flavour...", class: "input" %>
       <span class="input-group-btn">
-         <button class="btn btn-primary" type="submit">Search</button> 
+         <button class="button" type="submit">Search</button> 
       </span>
       <%= link_to "Clear", gins_path, class: "btn btn-default" %>
       </div>

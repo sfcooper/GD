@@ -1,1 +1,16 @@
-<H1>The Gin Detective</H1>
+<div class="container"><H1>Evening Guv'nor</H1>
+<h2>What's your charge?</h2>
+
+    <%= form_tag gins_path, method: :get do %>
+     <div class="input-group mb-5">
+      <%= text_field_tag :q, nil, placeholder: "Name, Flavour...", class: "input" %>
+      <span class="input-group-btn">
+         <button class="button" type="submit">Search</button> 
+      </span>
+      <%= link_to "Clear", gins_path, class: "btn btn-default" %>
+      </div>
+    <% end %>
+</div>
+
+<br>
+<br>
