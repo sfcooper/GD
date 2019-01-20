@@ -1,8 +1,14 @@
-<p id="notice"><%= notice %></p>
+
 <div class="container">
-<H1>
-  <%= @gin.name %>
-</H1>
+  <div class="center">
+  <H1>
+    <%= @gin.name %>
+  </H1>
+
+  <p>by</p>
+  <h2><%= @gin.distillery.name %></h2>
+  </div>
+<%= image_tag @gin.image.variant(resize: "400x400"), class: "img" %>
 
 <p class="lead">
   <%= @gin.snippet %>
@@ -14,7 +20,7 @@
   <%= @gin.description %>
 </p>
 
-<h3>Botanicals</h3>
+<h3><%= @gin.botanicals.count %> Botanicals</h3>
 <% @gin.botanicals.each do |bots| %>
   <span class="pill"><%= bots.name %></span>
 <%end%>

@@ -42,10 +42,11 @@ gem 'devise'
 gem "punching_bag"
 
 gem "rack-cors"
+
 #for pwa
 gem "serviceworker-rails"
+
 #image uploads
-gem 'paperclip'
 gem 'aws-sdk-s3', require: false
 
 #allows for image manipulation

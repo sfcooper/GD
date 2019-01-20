@@ -1,4 +1,5 @@
 <%= javascript_pack_tag 'botanicalselector' %>
+<%= javascript_pack_tag 'distilleryselector' %>
 <%= form_with(model: gin, local: true) do |form| %>
   <% if gin.errors.any? %>
     <div id="error_explanation">
@@ -29,12 +30,15 @@
   </div>
 
 <div id="botanical-selector"></div>
+<br />
+<div id="distillery-selector"></div>
 
+  <br />
   <div class="field">
-    <%= form.label :distillery_id %>
-    <%= form.number_field :distillery_id %>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
   </div>
-
+  <br />
   <div class="actions">
     <%= form.submit class: "button" %>
   </div>
