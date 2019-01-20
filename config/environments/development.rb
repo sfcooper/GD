@@ -63,16 +63,16 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-    # change to true to allow email to be sent during development
-    config.action_mailer.perform_deliveries = true
+  # change to true to allow email to be sent during development
+  config.action_mailer.perform_deliveries = true
 
-    config.action_mailer.smtp_settings = {
-        :user_name => ENV['SENDGRID_USERNAME'],
-        :password => ENV['SENDGRID_PASSWORD'],
-        :domain => 'thegd.herokuapp.com',
-        :address => 'smtp.sendgrid.net',
-        :port => 587,
-        :authentication => :plain,
-        :enable_starttls_auto => true
-      }
+  ActionMailer::Base.smtp_settings = {
+    :user_name            => 'app122351708@heroku.com',
+    :password             => 't7depajm6325',
+    :address              => "smtp.sendgrid.net",
+    :port                 => 587,
+    :enable_starttls_auto => true,
+    :authentication       => :plain,
+    :domain               => "thegd.herokuapp.com"
+  }
 end

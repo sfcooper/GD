@@ -7,5 +7,4 @@ class User < ApplicationRecord
 
   has_many :gins
 
-  validates :fname, presence: true
 end
