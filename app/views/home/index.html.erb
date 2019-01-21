@@ -1,9 +1,9 @@
 <div class="container">
 
 
-<% if Time.current > Time.current.beginning_of_day + 12.hours %> <h1>Afternoon Guv'nor</h1> 
+<% if Time.current > Time.current.beginning_of_day + 18.hours %> <h1>Evening Guv'nor</h1> 
 
-    <% elsif Time.current > Time.current.beginning_of_day + 18.hours %> <h1>Evening Guv'nor</h1>
+    <% elsif Time.current > Time.current.beginning_of_day + 12.hours %> <h1>Afternoon Guv'nor</h1>
     <%else%> <h1>Morning Guv'nor</h1> 
     
 <%end%>
@@ -12,14 +12,17 @@
 <h2>What's your charge?</h2>
 
     <%= form_tag gins_path, method: :get do %>
-     <div class="input-group mb-5">
-      <%= text_field_tag :q, nil, placeholder: "Name, Flavour...", class: "input" %>
-      <span class="input-group-btn">
-         <button class="button" type="submit">Search</button> 
-      </span>
+    <div class="row">
+     <div class="col-9">
+      <%= text_field_tag :q, nil, placeholder: "Name, botanicals...", class: "input" %>
+    </div>
+      <div class="col-3">
+         <button class="button" type="submit">Search </button> 
+      
       <%= link_to "Clear", gins_path, class: "btn btn-default" %>
       </div>
     <% end %>
+    </div>
 </div>
 
 <br /> 
