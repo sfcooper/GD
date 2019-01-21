@@ -29,6 +29,12 @@
 
   <div id="country-selector"></div>
 
+  <br />
+    <div class="field">
+    <%= form.label :website, class: "input-label" %>
+    <%= form.url_field :website, class: "input", placeholder: "https://..."  %>
+  </div>
+
   <div class="actions">
     <%= form.submit class: "button" %>
   </div>

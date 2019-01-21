@@ -69,6 +69,6 @@ class DistilleriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def distillery_params
-      params.require(:distillery).permit(:name, :slug, :snippet, :description, :country)
+      params.require(:distillery).permit(:name, :slug, :snippet, :description, :country, :website)
     end
 end

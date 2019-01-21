@@ -31,7 +31,7 @@ componentDidMount() {
         }));
         return (
         <div className="">
-           <label htmlFor="botanicals">Flavours <small> (You can select more than one)</small></label>
+           <label className="input-label" htmlFor="botanicals">Botanicals <small> (You can select more than one)</small></label>
            <Select isMulti isClearable components={makeAnimated()} id="botanical" name="gin[botanical_ids][]" options={botanicalItems} />
         </div>
         )

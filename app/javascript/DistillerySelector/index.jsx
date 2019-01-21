@@ -31,7 +31,7 @@ componentDidMount() {
         }));
         return (
         <div className="">
-           <label htmlFor="distilleries">distilleries</label>
+           <label className="input-label" htmlFor="distilleries">Distillery</label>
            <Select isClearable components={makeAnimated()} id="distilleries" name="gin[distillery_id]" options={distilleryItems} />
         </div>
         )
