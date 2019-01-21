@@ -1,4 +1,14 @@
-<div class="container"><H1>Evening Guv'nor</H1>
+<div class="container">
+
+
+<% if Time.current > Time.current.beginning_of_day + 12.hours %> <h1>Afternoon Guv'nor</h1> 
+
+    <% elsif Time.current > Time.current.beginning_of_day + 18.hours %> <h1>Evening Guv'nor</h1>
+    <%else%> <h1>Morning Guv'nor</h1> 
+    
+<%end%>
+
+
 <h2>What's your charge?</h2>
 
     <%= form_tag gins_path, method: :get do %>
@@ -12,5 +22,5 @@
     <% end %>
 </div>
 
-<br>
-<br>
+<br /> 
+<br />
