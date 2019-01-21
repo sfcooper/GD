@@ -1,4 +1,5 @@
 <%= javascript_pack_tag 'countryselector' %>
+<%= javascript_pack_tag 'textarea' %> 
 <%= form_with(model: distillery, local: true) do |form| %>
   <% if distillery.errors.any? %>
     <div id="error_explanation">
@@ -22,10 +23,7 @@
     <%= form.text_area :snippet, class: "input"  %>
   </div>
 
-  <div class="field">
-    <%= form.label :description, class: "input-label" %>
-    <%= form.text_area :description, class: "input"  %>
-  </div>
+  <div id="textarea-component"></div>
 
   <div id="country-selector"></div>
 

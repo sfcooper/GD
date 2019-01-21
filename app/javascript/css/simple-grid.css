@@ -311,6 +311,7 @@ p {
   margin: 5px;
   border-radius: 4px;
   font-size: 1rem;
+  line-height: 2;
   margin-bottom: 20px;
   box-sizing: border-box;
 
@@ -369,7 +370,7 @@ p {
     transition: 0.3s;
     padding: 15px;
     margin: 10px;
-    width: 250px;
+    width: 300px;
   }
 
   @media screen and (min-width: 800px) {
@@ -378,9 +379,10 @@ p {
     }
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 600px) {
     .card {
-      flex: 0 1 24%;
+      max-width: calc(25% - 1em);
+      flex-shrink: 0;
     }
   }
 
