@@ -18,6 +18,7 @@ body {
   font-size: 100%;
   background-color: aliceblue;
   margin: 0;
+  
 }
 
 /* ROOT FONT STYLES */
@@ -144,7 +145,7 @@ p {
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  width: 90%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -371,6 +372,7 @@ p {
   top: 0%;
   width: 100%;
   z-index: 3;
+  
 }
 
 .header ul {
@@ -379,6 +381,7 @@ p {
   list-style: none;
   overflow: hidden;
   background-color: aliceblue;
+  
 }
 
 .header li a {
@@ -407,6 +410,7 @@ p {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  
 }
 
 /* menu icon */
@@ -503,13 +507,12 @@ p {
   width: 100%;
   height: 2.5rem;
   padding:20px;
+  
 }
 
 .footer p {
   color: #82D6D6;
 }
-
-
 
 
 /* IMAGES */
