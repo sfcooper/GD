@@ -1,14 +1,16 @@
 {
   "application.css": "/packs/application-d8c475dda376afc0a33d4bf0d7922c0f.css",
   "application.css.map": "/packs/application-d8c475dda376afc0a33d4bf0d7922c0f.css.map",
-  "application.js": "/packs/application-0e3c27a40bd2bdd971da.js",
-  "application.js.map": "/packs/application-0e3c27a40bd2bdd971da.js.map",
-  "botanicalselector.js": "/packs/botanicalselector-f2eb021d887aa12896f6.js",
-  "botanicalselector.js.map": "/packs/botanicalselector-f2eb021d887aa12896f6.js.map",
-  "countryselector.js": "/packs/countryselector-fa12a16a9ce1d8ad5c07.js",
-  "countryselector.js.map": "/packs/countryselector-fa12a16a9ce1d8ad5c07.js.map",
-  "distilleryselector.js": "/packs/distilleryselector-2d26004367629077fac5.js",
-  "distilleryselector.js.map": "/packs/distilleryselector-2d26004367629077fac5.js.map",
-  "textarea.js": "/packs/textarea-5f1d0cca7bfd080e63ef.js",
-  "textarea.js.map": "/packs/textarea-5f1d0cca7bfd080e63ef.js.map"
+  "application.js": "/packs/application-3243881e9966272f58f4.js",
+  "application.js.map": "/packs/application-3243881e9966272f58f4.js.map",
+  "botanicalsCRUD.js": "/packs/botanicalsCRUD-364b2ce5d532e5753bd7.js",
+  "botanicalsCRUD.js.map": "/packs/botanicalsCRUD-364b2ce5d532e5753bd7.js.map",
+  "botanicalselector.js": "/packs/botanicalselector-e4f28f6e24dd53a674fb.js",
+  "botanicalselector.js.map": "/packs/botanicalselector-e4f28f6e24dd53a674fb.js.map",
+  "countryselector.js": "/packs/countryselector-b17e97604577ef1fe791.js",
+  "countryselector.js.map": "/packs/countryselector-b17e97604577ef1fe791.js.map",
+  "distilleryselector.js": "/packs/distilleryselector-6915e25da971de87cc87.js",
+  "distilleryselector.js.map": "/packs/distilleryselector-6915e25da971de87cc87.js.map",
+  "textarea.js": "/packs/textarea-909c78b3ecce5f8f2a2c.js",
+  "textarea.js.map": "/packs/textarea-909c78b3ecce5f8f2a2c.js.map"
 }

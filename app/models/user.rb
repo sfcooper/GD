@@ -5,7 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, 
          :confirmable, :lockable, :timeoutable, :trackable
 
-  has_many :gins
 
+  validates :fname, presence: true
+  validates :email, presence: true
+  validates :password, presence: true
 
 end
