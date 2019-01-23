@@ -1,21 +1,55 @@
 import React from 'react';
-import TextareaAutosize from 'react-autosize-textarea';
+import axios from 'axios';
 
-class TextArea extends React.Component {
-    componentDidMount() {
-      this.textarea.focus();
-    }
-   
-    render() {
-      return (
-        <div>
-          <label className="input-label" htmlFor="botanicals">Description</label>
-          <TextareaAutosize className="input" rows={5} innerRef={ref => this.textarea = ref} name="distilleries[description]" />
-        </div>  
-      );
-    }
+
+
+class Distillery extends React.Component {
+   constructor(props) {
+     super(props);
+     this.state = {
+       id: props.id,
+       description: props.description
+     };
   }
 
-  export default TextArea
+  handleIDChange = distilleries => {this.setState({ id: distilleries.target.value })}
+  handleDescriptionChange = distilleries => {this.setState({ description: distilleries.target.value })}
+
+
+
+  handleSubmit = distilleries => {
+    event.preventDefault();
+  }
+
+  componentDidMount() {  
+    axios.get('/distilleries/${props.id}/edit.json',{ id: this.state.id, description: this.state.description})
+      .then(res => {
+      const distilleries = res.data;
+      this.setState({ distilleries });
+    })
+      .catch(error => console.log(error))
+  }
+  componentWillUnmount() {
+    this.unmounted = true;  
+  }
+  
+
+  render() {
+    return (
+
+      <form onSubmit={this.handleSubmit}>
+      
+
+          <label className="input-label">Description:  <input className="input" type="text" name="this.state.description" onChange={this.handleDescriptionChange} /></label><br />
+ 
+
+        <button className="button" type="submit">Add</button>
+      </form>
+    );
+  }
+}
+
+
+export default Distillery
 
 

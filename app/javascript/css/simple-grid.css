@@ -34,8 +34,6 @@ body {
 .lead {
   font-size: 2rem;
   font-weight: 100;
-  letter-spacing: 1px;
-  line-height: 1.5px;
 
 }
 
@@ -553,7 +551,7 @@ p {
 /* IMAGES */
 
 
-img {
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
