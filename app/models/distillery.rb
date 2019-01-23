@@ -1,8 +1,11 @@
 class Distillery < ApplicationRecord
 
     has_many :gins
+
+    #validations should also be tested in rspec
     validates :name, presence: true
     validates :snippet, presence: true
+    validates :description, presence: true
 
     #allows for human/seo friendly URLs. Takes the name field and writes to the slug field  
     extend FriendlyId

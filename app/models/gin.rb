@@ -6,6 +6,7 @@ class Gin < ApplicationRecord
 
     validates :name, presence: true
     validates :snippet, presence: true
+    validates :description, presence: true
 
     #enables model for punching_bag used for trending
     acts_as_punchable
